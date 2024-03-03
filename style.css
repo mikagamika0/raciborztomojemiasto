@@ -1,4 +1,53 @@
-#pawel
-     {
-	 color: red;
-	 }
+body {
+    margin: 10px;
+    padding: 20px;
+}
+h1 {
+	text-align: center;
+    color: #ff6600;
+	font-family: Arial;
+}
+h4 {
+    color: #ff6600;;
+	font-family: Arial;
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ff8103;
+	width: 75%;
+	margin: 0;
+}
+.hra {
+    border: none;
+    height: 1px;
+    background-color: #ff8103;
+	width: 75%;
+}
+.hrb {
+    border: none;
+    height: 2px;
+    background-color: #ff8103;
+	width: 75%;
+	margin: 0 auto;
+}
+.pa {
+    text-align: center;
+}
+table {
+    border: 2px solid gray;
+    border-collapse: collapse;
+	margin: 0 auto;
+}
+th, td {
+    border: 2px solid gray;
+    padding: 5px;
+}
+td {
+    text-align: center;
+}
+img {
+    border: 1px solid gray;
+	display: block;
+	margin: 0 auto;
+}
