@@ -3,11 +3,11 @@ body {
     padding: 20px;
 }
 .ain {
-	text-decoration: none    
+	text-decoration: none;  
 }
 .ain:hover {
-	color: #8a2725
-	text-decoration: none
+	color: #8a2725;
+	text-decoration: none;
 }
 h1 {
 	text-align: center;
