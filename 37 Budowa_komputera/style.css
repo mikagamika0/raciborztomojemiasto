@@ -5,11 +5,13 @@ body {
 .ain {
 	text-decoration: none; 
 	font-weight: bold;
+	font-family: Arial;
 }
 .ain:hover {
 	color: #8a2725;
 	text-decoration: none;
 	font-weight: bold;
+	font-family: Arial;
 }
 h1 {
 	text-align: center;
