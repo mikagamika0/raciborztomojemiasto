@@ -16,7 +16,9 @@ a {
 	font-size: 30px;
 	font-weight: bold;
 	text-decoration: none;
+	font-family: 'Comic Sans MS';
 }
 a:hover {
     color: #26402e;
+	font-family: 'Comic Sans MS';
 }
