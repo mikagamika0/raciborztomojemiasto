@@ -3,7 +3,8 @@ body {
     padding: 20px;
 }
 .ain {
-	text-decoration: none;  
+	text-decoration: none; 
+	font-weight: bold;
 }
 .ain:hover {
 	color: #8a2725;
