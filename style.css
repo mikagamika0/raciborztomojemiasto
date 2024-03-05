@@ -11,8 +11,11 @@ h1 {
 	font-weight: bold;
 	font-family: 'Comic Sans MS';
 }
-a {
+a:link {
     color: white; 
 	font-size: 30px;
 	font-weight: bold;
+}
+a:hover {
+    color: #34573f;
 }
