@@ -1,0 +1,109 @@
+{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+.container h1{
+    font-size: 40px;
+    font-family: rubik, helvetica, arial, sans-serif;
+    font-weight: bold;
+    padding: 15px;
+    color: #fff;
+    background: rgba(51,51,51,0.2);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container{
+    position: relative;
+    min-height: 100vh;
+    background-image: url("../galeria/images/zdjecie7.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container .video-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.container .video-container .video{
+    height: 250px;
+    width: 350px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.7);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.container .video-container .video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.container .video-container.video:hover video{
+    transform: scale(1.1);
+}
+
+.container .popup-video{
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 100;
+    background: rgba(0,0,0,.8);
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.container .popup-video video{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    object-fit: cover;
+}
+
+.container .popup-video span{
+    position: absolute;
+    top: 5px; right: 20px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 100;
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+    .container .popup-video video{
+        width: 95%;
+    }
+}
+
+.link {
+    width: 10%;
+    font-family: rubik, helvetica, arial, sans-serif;
+    color: #fff;
+    background: rgba(51,51,51,0.2);
+    border: 5px #fff solid;
+    text-decoration: none;
+    position: relative;
+    padding: 0.5%;
+    left: 2%;
+}
+
+.ok{
+    font-family: rubik, helvetica, arial, sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 65%;
+    top: 4%;
+}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pl">
+ <head>
+  <meta charset="utf-8">
+  <title>Racibórztomojemiasto</title>
+  <meta name="description" content="jhvcsjhvcc">
+  <meta name="keywords" content="iuobcsabsafc">
+  <meta name="author" content="Amelia Stania">
+  <link rel="icon" href="../ikona.png" type="image/x-icon">
+  <link rel="stylesheet" href="stylegaleria.css">
+ </head>
+ <body>
+  
+ <div class="container">
+
+    <h1>Galeria zdjęć</h1>
+
+    <a href="../index.html" class="link">Powrót do strony głównej</a>
+    <p class="ok">zdjecia autorskie zrobione przez fotoreporterke Racibórztomojemiasto Amelię Stanię.</p>
+
+    <div class="image-container">
+        <div class="image"><img src="images/zdjecie1.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie2.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie3.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie4.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie5.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie6.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie7.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie8.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie9.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie11.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie12.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie13.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie14.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie15.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie16.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie17.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie18.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie19.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie20.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie21.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie22.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie23.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie24.jpg" alt=""></div>
+        <div class="image"><img src="images/zdjecie10.jpg" alt=""></div>
+    </div>
+
+    <div class="popup-image">
+        <span>&times;</span>
+        <img src="images/zdjecie1.jpg" alt="">
+    </div>
+
+
+
+
+ </div>
+
+ <script>
+
+ document.querySelectorAll('.image-container img').forEach(Image =>{
+    Image.onclick = () =>{
+        document.querySelector('.popup-image').style.display = 'block';
+        document.querySelector('.popup-image img').src = Image.getAttribute('src');
+    }
+ });
+
+ document.querySelector('.popup-image span').onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'none';
+ }
+
+ </script>
+
+ </body>
+ </html>

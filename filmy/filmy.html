@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <title>Racibórztomojemiasto</title>
+    <meta name="description" content="Opis galerii filmów">
+    <meta name="keywords" content="słowa kluczowe, galeria, filmy">
+    <meta name="author" content="Amelia Stania">
+    <link rel="icon" href="../ikona.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylefilmy.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Galeria Filmów</h1>
+
+<a href="../index.html" class="link">Powrót do strony głównej</a>
+    <p class="ok">filmy autorskie zrobione przez fotoreporterke Racibórztomojemiasto Amelię Stanię.</p>
+
+<div class="video-container">
+
+<div class="video"><video src="videos/film1.mp4" muted></video></div>
+<div class="video"><video src="videos/film2.mp4" muted></video></div>
+<div class="video"><video src="videos/film3.mp4" muted></video></div>
+<div class="video"><video src="videos/film4.mp4" muted></video></div>
+<div class="video"><video src="videos/film5.mp4" muted></video></div>
+<div class="video"><video src="videos/film6.mp4" muted></video></div>
+<div class="video"><video src="videos/film7.mp4" muted></video></div>
+<div class="video"><video src="videos/film8.mp4" muted></video></div>
+
+
+<div class="popup-video">
+    <span>&times;</span>
+    <video src="videos/film1.mp4" controls></video>
+</div>
+
+
+
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  const videos = document.querySelectorAll('.video-container video');
+  const holder = document.querySelector('.popup-video video');
+
+  videos.forEach (vid => {
+    
+    vid.onclick = function( el) {
+      let src = el.target.getAttribute('src');
+
+      holder.setAttribute('src', src);
+
+      document.querySelector('.popup-video').style.display = 'block';
+    }
+  });
+
+  document.querySelector('.popup-video span').onclick = () => {
+    const mdsrc = document.querySelector('.popup-video video');
+
+    mdsrc.pause();
+    mdsrc.currentTime = 0;
+    document.querySelector('.popup-video').style.display = 'none';
+  }
+});
+</script>
+
+</body>
+</html>
